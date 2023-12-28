@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+<title>slideShow</title>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta content="text/html; charset=iso-8859-2" http-equiv="Content-Type">
+<link rel="stylesheet" href="style.css">
+<style>
+.mySlides {display:none;}
+</style>
+</head>
+
+<body>
+
+<div class="block1" >
+  <div class="centered">image-slideShow</div>
+  <img class="mySlides" src="./img/1.jpg" style="width:100%">
+  <img class="mySlides" src="./img/2.jpg" style="width:100%">
+  <img class="mySlides" src="./img/3.jpg" style="width:100%">
+  <img class="mySlides" src="./img/4.jpg" style="width:100%">
+  <img class="mySlides" src="./img/5.jpg" style="width:100%">
+  <img class="mySlides" src="./img/6.jpg" style="width:100%">
+  <img class="mySlides" src="./img/7.jpg" style="width:100%">
+  <img class="mySlides" src="./img/8.jpg" style="width:100%">
+  <img class="mySlides" src="./img/9.jpg" style="width:100%">
+  <img class="mySlides" src="./img/10.jpg" style="width:100%">
+  <img class="mySlides" src="./img/11.jpg" style="width:100%">
+ 
+</div>
+<!-- image gallery -->
+<div class="block2">
+<div class="gallery">
+  <div class="thumbnail" onclick="showImage('./img/1.jpg')">
+    <img src="./img/1.jpg" alt="Thumbnail 1">
+  
+  </div>
+  <div class="thumbnail" onclick="showImage('./img/2.jpg')">
+    <img src="./img/2.jpg" alt="Thumbnail 2">
+  </div>
+  <div class="thumbnail" onclick="showImage('./img/3.jpg')">
+    <img src="./img/3.jpg" alt="Thumbnail 1">
+  </div>
+  <div class="thumbnail" onclick="showImage('./img/4.jpg')">
+    <img src="./img/4.jpg" alt="Thumbnail 2">
+  </div>
+  <div class="thumbnail" onclick="showImage('./img/5.jpg')">
+    <img src="./img/5.jpg" alt="Thumbnail 1">
+  </div>
+  <div class="thumbnail" onclick="showImage('./img/6.jpg')">
+    <img src="./img/6.jpg" alt="Thumbnail 2">
+  </div>
+  <div class="thumbnail" onclick="showImage('./img/7.jpg')">
+    <img src="./img/7.jpg" alt="Thumbnail 1">
+  </div>
+  <div class="thumbnail" onclick="showImage('./img/8.jpg')">
+    <img src="./img/8.jpg" alt="Thumbnail 2">
+  </div>
+  <div class="bottom-left">Image Gallery</div>
+  <div class="bottom-right">Image Gallery</div>
+  <div class="centered-button">@ designed by Raja</div>
+ </div>
+
+<div class="enlarged-image" onclick="hideImage()">
+  <span class="close-btn"></span>
+  <img id="enlarged-img" src="" alt="Enlarged Image">
+</div>
+</div> 
+  
+</div>
+
+<script src="style.js"></script>
+
+</body>
+</html>
